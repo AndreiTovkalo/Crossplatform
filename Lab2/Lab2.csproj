@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Dockerfile" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="bin\Debug\net7.0" />
+      <Folder Include="obj\Debug\net7.0\ref" />
+      <Folder Include="obj\Debug\net7.0\refint" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="obj\Debug\net7.0\Lab2.AssemblyInfoInputs.cache" />
+      <Content Include="obj\Debug\net7.0\Lab2.assets.cache" />
+      <Content Include="obj\Debug\net7.0\Lab2.GeneratedMSBuildEditorConfig.editorconfig" />
+      <Content Include="obj\Lab2.csproj.nuget.dgspec.json" />
+      <Content Include="obj\Lab2.csproj.nuget.g.props" />
+      <Content Include="obj\Lab2.csproj.nuget.g.targets" />
+      <Content Include="obj\project.assets.json" />
+      <Content Include="obj\project.nuget.cache" />
+      <Content Include="obj\project.packagespec.json" />
+      <Content Include="obj\rider.project.restore.info" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+      <Compile Include="obj\Debug\net7.0\Lab2.AssemblyInfo.cs" />
+      <Compile Include="obj\Debug\net7.0\Lab2.GlobalUsings.g.cs" />
+    </ItemGroup>
+
+</Project>
