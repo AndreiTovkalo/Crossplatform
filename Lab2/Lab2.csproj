@@ -13,12 +13,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="bin\Debug\net7.0" />
       <Folder Include="obj\Debug\net7.0\ref" />
       <Folder Include="obj\Debug\net7.0\refint" />
     </ItemGroup>
 
     <ItemGroup>
+      <Content Include="bin\Debug\net7.0\INPUT.txt" />
       <Content Include="obj\Debug\net7.0\Lab2.AssemblyInfoInputs.cache" />
       <Content Include="obj\Debug\net7.0\Lab2.assets.cache" />
       <Content Include="obj\Debug\net7.0\Lab2.GeneratedMSBuildEditorConfig.editorconfig" />
