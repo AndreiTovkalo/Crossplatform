@@ -1,15 +1,15 @@
-﻿using System;
-using System.Linq;
+namespace Lab4_lib;
 
-class Edge
+public class Lab3
 {
-    public int Start { get; set; }
-    public int End { get; set; }
-    public int Weight { get; set; }
-}
-
-class Program
-{
+    
+    class Edge
+    {
+        public int Start { get; set; }
+        public int End { get; set; }
+        public int Weight { get; set; }
+    }
+    
     static int[] parent;
 
     static int Find(int vertex)
@@ -26,10 +26,10 @@ class Program
         if (a != b)
             parent[b] = a;
     }
-
-    static void Main()
+    
+    public static void Run(string inputPath, string outputPath)
     {
-        string[] input = File.ReadAllLines("INPUT.txt")[0].Split();
+        string[] input = File.ReadAllLines(outputPath)[0].Split();
         int N = int.Parse(input[0]);
         int M = int.Parse(input[1]);
 
@@ -41,7 +41,7 @@ class Program
 
         for (int i = 0; i < M; i++)
         {
-            input = File.ReadAllLines("INPUT.txt")[i+1].Split();
+            input = File.ReadAllLines(outputPath)[i+1].Split();
             int A = int.Parse(input[0]) - 1;
             int B = int.Parse(input[1]) - 1;
             int C = int.Parse(input[2]);
@@ -61,6 +61,7 @@ class Program
             }
         }
 
-        File.WriteAllText("OUTPUT.txt",minSpanningTreeWeight.ToString());
+        File.WriteAllText(outputPath,minSpanningTreeWeight.ToString());
     }
+
 }

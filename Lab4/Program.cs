@@ -1,45 +1,97 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
+﻿using Lab4_lib;
+using McMaster.Extensions.CommandLineUtils;
 
 class Program
 {
     static void Main(string[] args)
     {
-        string labDirectory = "../../../../Lab4ClassLib"; 
-        
-        if (!Directory.Exists(labDirectory))
+        while (true)
         {
-            Console.WriteLine($"Folder '{labDirectory}' not exist");
-            return;
-        }
+            Console.WriteLine("Enter command (version, run lab1/lab2/lab3, set-path -p/--path <path>):");
+            string userInput = Console.ReadLine();
+            string[] inputTokens = userInput.Split(' ');
 
-        Console.WriteLine("Enter command (lab1, lab2 or lab3):");
-        string command = Console.ReadLine();
+            if (inputTokens.Length == 0)
+            {
+                Console.WriteLine("Unknown command. Try again.");
+                continue;
+            }
 
-        string labFile = Path.Combine(labDirectory, $"{command}.cs");
+            string command = inputTokens[0].ToLower();
 
-        if (File.Exists(labFile))
-        {
-            Process process = new Process();
-            process.StartInfo.FileName = "csc";
-            process.StartInfo.Arguments = $"{labFile} /out:LabX.exe";
-            process.StartInfo.UseShellExecute = false;
-            process.StartInfo.RedirectStandardOutput = true;
-            process.StartInfo.CreateNoWindow = true;
+            if (command == "version")
+            {
+                Console.WriteLine("Author: Andrii Tovkalo");
+                Console.WriteLine("Version: 1.0.0");
+            }
+            else if (command == "run" && inputTokens.Length > 1)
+            {
+                string subCommand = inputTokens[1].ToLower();
+                string inputFilePath = null;
+                string outputFilePath = null;
 
-            process.Start();
-            process.WaitForExit();
+                for (int i = 2; i < inputTokens.Length; i++)
+                {
+                    if (inputTokens[i] == "-I" || inputTokens[i] == "--input")
+                    {
+                        if (i + 1 < inputTokens.Length)
+                        {
+                            inputFilePath = inputTokens[i + 1];
+                            i++;
+                        }
+                    }
+                    else if (inputTokens[i] == "-o" || inputTokens[i] == "--output")
+                    {
+                        if (i + 1 < inputTokens.Length)
+                        {
+                            outputFilePath = inputTokens[i + 1];
+                            i++;
+                        }
+                    }
+                }
 
-            process.StartInfo.FileName = "LabX.exe";
-            process.StartInfo.Arguments = "";
-            process.Start();
+                if (subCommand == "lab1" || subCommand == "lab2" || subCommand == "lab3")
+                {
+                    Console.WriteLine($"Executing command 'run {subCommand}' with input file '{inputFilePath}' and output file '{outputFilePath}'");
 
-            process.WaitForExit();
-        }
-        else
-        {
-            Console.WriteLine($"File '{labFile}' not found.");
+                    if (!string.IsNullOrEmpty(inputFilePath) && !string.IsNullOrEmpty(outputFilePath))
+                    {
+                        switch (subCommand)
+                        {
+                            case "lab1":
+                                Lab1.Run(inputFilePath, outputFilePath);
+                                break;
+                            case "lab2":
+                                Lab2.Run(inputFilePath, outputFilePath);
+                                break;
+                            case "lab3":
+                                Lab3.Run(inputFilePath, outputFilePath);
+                                break;
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Unknown command for 'run'. Try again...");
+                }
+            }
+            else if (command == "set-path" && inputTokens.Length > 2)
+            {
+                if ((inputTokens[1] == "-p" || inputTokens[1] == "--path") && !string.IsNullOrEmpty(inputTokens[2]))
+                {
+                    string labPath = inputTokens[2];
+                    Environment.SetEnvironmentVariable("LAB_PATH", labPath);
+                    Console.WriteLine($"Path to the folder with input and output files set to '{labPath}'");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid 'set-path' command. Enter the command again.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid command. Enter the command again.");
+            }
         }
     }
 }
