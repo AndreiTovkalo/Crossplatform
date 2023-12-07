@@ -1,0 +1,190 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5/Lab5.csproj": {}
+  },
+  "projects": {
+    "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5/Lab5.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5/Lab5.csproj",
+        "projectName": "Lab5",
+        "projectPath": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5/Lab5.csproj",
+        "packagesPath": "/Users/andreitovkalo/.nuget/packages/",
+        "outputPath": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/andreitovkalo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0",
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/Lab5_lib.csproj": {
+                "projectPath": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/Lab5_lib.csproj"
+              }
+            }
+          },
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/Lab5_lib.csproj": {
+                "projectPath": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/Lab5_lib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Auth0.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        },
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Auth0.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/Lab5_lib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/Lab5_lib.csproj",
+        "projectName": "Lab5_lib",
+        "projectPath": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/Lab5_lib.csproj",
+        "packagesPath": "/Users/andreitovkalo/.nuget/packages/",
+        "outputPath": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andreitovkalo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

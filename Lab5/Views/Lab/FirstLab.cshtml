@@ -1,0 +1,31 @@
+﻿@model List<int>
+
+@{
+    ViewData["Title"] = "Lab1";
+}
+
+<h1>Lab1</h1>
+
+
+
+<form method="post" >
+    <div>
+        <label for="input">Input path</label>
+        <input type="text" name="inputPath" id="input" />
+    </div>
+    <div>
+        <label for="output">Output path</label>
+        <input type="text" name="outputPath" id="output" />
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+@if(Model != null && Model.Count > 0)
+{
+    <h2>Response: </h2>
+    foreach(var item in Model)
+    {
+        <p>@item</p>
+    }
+}
