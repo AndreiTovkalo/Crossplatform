@@ -10,3 +10,15 @@
 /Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/obj/Debug/net7.0/refint/Lab5_lib.dll
 /Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/obj/Debug/net7.0/Lab5_lib.pdb
 /Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/obj/Debug/net7.0/ref/Lab5_lib.dll
+D:\КПЗ\Crossplatform\Lab5_lib\bin\Debug\net7.0\Lab5_lib.deps.json
+D:\КПЗ\Crossplatform\Lab5_lib\bin\Debug\net7.0\Lab5_lib.dll
+D:\КПЗ\Crossplatform\Lab5_lib\bin\Debug\net7.0\Lab5_lib.pdb
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\Lab5_lib.GeneratedMSBuildEditorConfig.editorconfig
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\Lab5_lib.AssemblyInfoInputs.cache
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\Lab5_lib.AssemblyInfo.cs
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\Lab5_lib.csproj.CoreCompileInputs.cache
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\Lab5_lib.sourcelink.json
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\Lab5_lib.dll
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\refint\Lab5_lib.dll
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\Lab5_lib.pdb
+D:\КПЗ\Crossplatform\Lab5_lib\obj\Debug\net7.0\ref\Lab5_lib.dll

@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E+gQFs9zn1SB8GJ5gTh/IKiqk4X4/imr/IsB4d5683er6hzjZzQ3dAeNs3BSsQAo2ChM8meBjUIuntxFdjOOpQ==",
+  "dgSpecHash": "GjXnBDSb869JlsUjovctnlmf5fKkM3aDVO96Em7fBUEWnvjNvAU39NDZ8Iy85HbDrKA1CNZRPHPwAcSdXblGog==",
   "success": true,
-  "projectFilePath": "/Users/andreitovkalo/RiderProjects/CrossPlatformLabs/Lab5_lib/Lab5_lib.csproj",
-  "expectedPackageFiles": [
-    "/Users/andreitovkalo/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "/Users/andreitovkalo/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\КПЗ\\Crossplatform\\Lab5_lib\\Lab5_lib.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

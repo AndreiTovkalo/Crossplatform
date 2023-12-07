@@ -28,4 +28,8 @@
       <Folder Include="vagrant\vagrant-shared\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Debug\net8.0\Lab4.csproj.FileListAbsolute.txt" />
+    </ItemGroup>
+
 </Project>

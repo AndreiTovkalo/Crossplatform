@@ -1,0 +1,127 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\КПЗ\\Crossplatform\\Lab5_2\\Lab5_2.csproj": {}
+  },
+  "projects": {
+    "D:\\КПЗ\\Crossplatform\\Lab5_2\\Lab5_2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\КПЗ\\Crossplatform\\Lab5_2\\Lab5_2.csproj",
+        "projectName": "Lab5_2",
+        "projectPath": "D:\\КПЗ\\Crossplatform\\Lab5_2\\Lab5_2.csproj",
+        "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
+        "outputPath": "D:\\КПЗ\\Crossplatform\\Lab5_2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\КПЗ\\Crossplatform\\Lab5_lib\\Lab5_lib.csproj": {
+                "projectPath": "D:\\КПЗ\\Crossplatform\\Lab5_lib\\Lab5_lib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Auth0.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\КПЗ\\Crossplatform\\Lab5_lib\\Lab5_lib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\КПЗ\\Crossplatform\\Lab5_lib\\Lab5_lib.csproj",
+        "projectName": "Lab5_lib",
+        "projectPath": "D:\\КПЗ\\Crossplatform\\Lab5_lib\\Lab5_lib.csproj",
+        "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
+        "outputPath": "D:\\КПЗ\\Crossplatform\\Lab5_lib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
